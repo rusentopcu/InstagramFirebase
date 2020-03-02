@@ -115,6 +115,9 @@
                                 <rect key="frame" x="147" y="600" width="121" height="111"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="actionButtonClicked:" destination="29k-bC-6am" eventType="touchUpInside" id="fdc-Ud-ufz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -136,6 +139,7 @@
                     <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="GJ6-D4-awj"/>
                     <connections>
                         <outlet property="imageView" destination="y6K-ip-EMB" id="rRx-kP-0eW"/>
+                        <outlet property="outletButton" destination="h3p-cy-j8A" id="AQ4-OL-Y9j"/>
                         <outlet property="textComment" destination="VGD-Vk-4rw" id="S5u-Dl-6XW"/>
                     </connections>
                 </viewController>
