@@ -19,13 +19,31 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
+        
         
     }
 
 
     
     @IBAction func signinClicked(_ sender: Any) {
-         performSegue(withIdentifier: "toFeedVC", sender: nil)
+        
+        if (emailText.text! != "" && passwordText.text! != "") {
+            
+            Auth.auth().signIn(withEmail: emailText.text!, password: passwordText.text!) { (authdata, error) in
+                if(error != nil) {
+                    self.makeAlert(titleinput: "Error", messageinput: error!.localizedDescription)
+                }
+                
+                else {
+                    self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+                }
+            }
+        }
+            
+        else {
+            self.makeAlert(titleinput: "Error", messageinput: "Username/Password not empty!")
+        }
     }
     
     

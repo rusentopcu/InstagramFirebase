@@ -98,7 +98,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="5CG-pk-Obz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Upload" id="GJ6-D4-awj"/>
+                    <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="GJ6-D4-awj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69S-rC-2ZC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,7 +126,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="mYj-gn-Ooz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="Eje-g1-ucu"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="s.circle.fill" catalog="system" id="Eje-g1-ucu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F7Q-Qe-wr7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,7 +142,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ovE-6V-2tU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" id="XsP-mI-psQ"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="f.circle.fill" catalog="system" id="XsP-mI-psQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZH-Yf-mHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -151,7 +151,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="bti-7l-eFQ">
             <objects>
-                <tabBarController id="5eM-qS-Ll1" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="5eM-qS-Ll1" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="1tT-8E-s31"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P1c-dA-9MN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -169,4 +169,9 @@
             <point key="canvasLocation" x="-438" y="-23"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="f.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="s.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="u.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
 </document>
